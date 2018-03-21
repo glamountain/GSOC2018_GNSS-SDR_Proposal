@@ -1,14 +1,75 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass{NSF}
+\usepackage{amssymb}
 
-\title{GSOC2018_GNSS-SDR_Proposal}
-\author{gerald }
-\date{March 2018}
+\graphicspath{{figures/}}
+
+\newcommand{\comment}[1] {{\color{red}$\blacktriangleright${#1}$\blacktriangleleft$}}
+
+\AtEndDocument{\bigskip{\footnotesize%
+  \noindent\textsc{Gerald LaMountain, Dept. of Engineering, Northeastern University, Boston, Massachusetts 02115} \par  
+  \textit{E-mail address}: \texttt{lamountain.g@husky.neu.edu} \par
+  \textit{Physical address}: \texttt{Northeastern University, 140 The Fenway Building, 3rd Floor, Boston MA 02115} \par
+  \textit{Phone Number}: \texttt{603-498-6774} \par
+  \textit{Mobile Number}: \texttt{603-498-6774} \par
+}}
 
 \begin{document}
 
-\maketitle
+% A. Cover Sheet
+% A number of the boxes contained on the Cover Sheet are
+% electronically pre-filled as part of the FastLane login process
+% Complete the rest of your info there
 
-\section{Introduction}
+% B. Project Summary
+\title{Proposal to implement Bayesian Covariance Estimation for Kalman Filter based Digital Carrier Synchronization in GNSS-SDR}
+\author{Gerald LaMountain, \textit{Electrical and Computer Engineering Dept., Northeastern University}, Boston, MA, USA.}
+
+\newsection{A}
+\input{sections/summary}
+
+%\comment{This is a comment. Delete it!}
+
+% C. Table of Contents 
+% A Table of Contents is automatically generated for the proposal by FastLane
+
+% D. Project Description
+\newsection{B}
+\input{sections/description}
+
+% E. References Cited
+\newsection{C}
+\renewcommand\refname{References Cited}
+\bibliography{references}
+
+% I prefer to use the IEEE bibliography style. 
+% That's  NOT required by the NSF guidelines. 
+% Feel Free to use whatever style you prefer
+\bibliographystyle{IEEEtran}
+
+% F. Biographical Sketch(es)
+\newsection{D}
+\input{sections/bio}
+
+% G1. Methodology and Timeline
+\newsection{E}
+\input{sections/methods}
+
+% G. Budget Justification
+% \newsection{G}
+% \input{sections/budget}
+
+%  H. Current and Pending Support
+% \newsection{H}
+% \input{sections/support}
+
+% I. Facilities, Equipment and Other Resources
+% \newsection{I}
+% \input{sections/resources}
+
+% J. Special Information and Supplementary Documentation
+% \newsection{J}
+% \input{sections/data}		% Data Management Plan (Required)
+
+%\input{sections/postdoc} % Postdoctoral Researcher Mentoring Plan (if applicable)
 
 \end{document}
