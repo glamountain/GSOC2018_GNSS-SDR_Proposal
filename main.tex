@@ -1,5 +1,7 @@
 \documentclass{NSF}
 \usepackage{amssymb}
+% figures with text wrapped around
+\usepackage{wrapfig}
 
 \graphicspath{{figures/}}
 
@@ -24,7 +26,7 @@
 \title{Proposal to implement Bayesian Covariance Estimation for Kalman Filter based Digital Carrier Synchronization in GNSS-SDR}
 \author{Gerald LaMountain, \textit{Electrical and Computer Engineering Dept., Northeastern University}, Boston, MA, USA.}
 
-\newsection{A}
+% \newsection{A}
 \input{sections/summary}
 
 %\comment{This is a comment. Delete it!}
@@ -33,11 +35,11 @@
 % A Table of Contents is automatically generated for the proposal by FastLane
 
 % D. Project Description
-\newsection{B}
+% \newsection{B}
 \input{sections/description}
 
 % E. References Cited
-\newsection{C}
+% \newsection{C}
 \renewcommand\refname{References Cited}
 \bibliography{references}
 
@@ -46,13 +48,14 @@
 % Feel Free to use whatever style you prefer
 \bibliographystyle{IEEEtran}
 
-% F. Biographical Sketch(es)
-\newsection{D}
-\input{sections/bio}
 
 % G1. Methodology and Timeline
-\newsection{E}
+% \newsection{E}
 \input{sections/methods}
+
+% F. Biographical Sketch(es)
+% \newsection{D}
+\input{sections/bio}
 
 % G. Budget Justification
 % \newsection{G}
